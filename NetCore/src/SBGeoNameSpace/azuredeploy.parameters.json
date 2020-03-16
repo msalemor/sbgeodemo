@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "serviceBusNamespaceNamePrimary": {
+      "value": "alemor-sbns-primary"
+    },
+    "serviceBusNamespaceNameSecondary": {
+      "value": "alemor-sbns-secondary"
+    },
+    "aliasName": {
+      "value": "alemor-ns-alias"
+    },
+    "locationSecondaryNamepsace": {
+      "value": "South Central US"
+    },
+    "serviceBusTopicName1": {
+      "value": "transaction-topic"
+    }
+  }
+}

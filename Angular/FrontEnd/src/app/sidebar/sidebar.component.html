@@ -1,0 +1,8 @@
+<h4>Submit Order</h4>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>    
+    <label for="btnOrders">Orders</label>
+    <input name="orders" type="text" value="1" class="form-control" style="width: 100px;" [(ngModel)]="orders"   >
+    <br>
+    <button type="submit" class="btn btn-primary">Submit Orders</button>
+</form>
+<br>

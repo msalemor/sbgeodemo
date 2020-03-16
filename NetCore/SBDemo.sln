@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SBDemo.Domain", "src\SBDemo.Domain\SBDemo.Domain.csproj", "{5B1D8261-DE1B-46E8-A6EB-E9FDC824CA54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SBDemo.HttpService", "src\SBDemo.HttpService\SBDemo.HttpService.csproj", "{B4EC61CC-3A19-45EA-A92F-2D82FFA1054E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SBDemo.Worker", "src\SBDemo.Worker\SBDemo.Worker.csproj", "{ADE19397-2DF4-4123-B9EE-81E60AD6D9DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{64A0265E-2BAD-4254-9802-9293A756DB01}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "SBGeoNameSpace", "src\SBGeoNameSpace\SBGeoNameSpace.deployproj", "{5ED3BE5B-EB22-49CE-87C3-8E112651C95A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E214E436-4995-44B5-886A-3D663AD71D79}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0D4E392C-8B93-4F06-89FE-2E340F5E9660}"
+	ProjectSection(SolutionItems) = preProject
+		src\Database\OnlineTransaction-table.sql = src\Database\OnlineTransaction-table.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B1D8261-DE1B-46E8-A6EB-E9FDC824CA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1D8261-DE1B-46E8-A6EB-E9FDC824CA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1D8261-DE1B-46E8-A6EB-E9FDC824CA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1D8261-DE1B-46E8-A6EB-E9FDC824CA54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EC61CC-3A19-45EA-A92F-2D82FFA1054E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EC61CC-3A19-45EA-A92F-2D82FFA1054E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EC61CC-3A19-45EA-A92F-2D82FFA1054E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EC61CC-3A19-45EA-A92F-2D82FFA1054E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE19397-2DF4-4123-B9EE-81E60AD6D9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE19397-2DF4-4123-B9EE-81E60AD6D9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE19397-2DF4-4123-B9EE-81E60AD6D9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE19397-2DF4-4123-B9EE-81E60AD6D9DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED3BE5B-EB22-49CE-87C3-8E112651C95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED3BE5B-EB22-49CE-87C3-8E112651C95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED3BE5B-EB22-49CE-87C3-8E112651C95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED3BE5B-EB22-49CE-87C3-8E112651C95A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5ED3BE5B-EB22-49CE-87C3-8E112651C95A} = {64A0265E-2BAD-4254-9802-9293A756DB01}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19FAD0F2-1628-4333-ABCE-60F46173BBEC}
+	EndGlobalSection
+EndGlobal

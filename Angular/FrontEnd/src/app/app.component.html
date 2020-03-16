@@ -1,0 +1,71 @@
+<app-menu></app-menu>
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidebarbkg col-md-2">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-5">
+      <h4>Sales Orders</h4>
+      <div class="card" *ngFor="let tran of SalesOrders">
+        <div class="card-body">
+          <p class="card-title font-weight-bold">Customer Id: {{tran.customerId}}</p>
+          <div class="card-text">
+            <div class="row">
+              <div class="col-md-3">SO No.:</div>
+              <div class="col-md-9">SO-{{tran.no}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Created:</div>
+              <div class="col-md-9">{{tran.createdTimeUTC | date:'long'}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Total:</div>
+              <div class="col-md-9">{{tran.total | currency}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Processed:</div>
+              <div class="col-md-9">{{tran.processedTimeUTC | date:'long'}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Status:</div>
+              <div class="col-md-9">{{tran.processed}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h4>Invoices</h4>
+      <div class="card" *ngFor="let tran of Invoices">
+        <div class="card-body">
+          <p class="card-title font-weight-bold">Customer Id: {{tran.customerId}}</p>
+          <div class="card-text">
+            <div class="row">
+              <div class="col-md-3">Inv No.:</div>
+              <div class="col-md-9">INV-{{tran.no}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Created:</div>
+              <div class="col-md-9">{{tran.createdTimeUTC | date:'long'}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Total:</div>
+              <div class="col-md-9">{{tran.total | currency}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Processed:</div>
+              <div class="col-md-9">{{tran.processedTimeUTC | date:'long'}}</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">Status:</div>
+              <div class="col-md-9">{{tran.processed}} </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <app-footer></app-footer>
+  <router-outlet></router-outlet>
+</div>
